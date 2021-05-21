@@ -17,6 +17,10 @@ import numpy as np
 data = None
 
 # YOUR CODE HERE 1
+data=pd.read_csv('data/1091402.txt', delim_whitespace=True, na_values=['-9999'],skiprows=[2])
+print(data.head())
+print(data.tail())
+
 
 # ### Part 2 
 # 
