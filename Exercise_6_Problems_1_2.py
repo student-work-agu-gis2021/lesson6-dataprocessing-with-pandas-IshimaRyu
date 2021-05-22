@@ -17,7 +17,7 @@ import numpy as np
 data = None
 
 # YOUR CODE HERE 1
-data=pd.read_csv('data/1091402.txt', delim_whitespace=True, na_values=['-9999'],skiprows=[2])
+data=pd.read_csv('data/1091402.txt', delim_whitespace=True, na_values=['-9999'],skiprows=[1])
 print(data.head())
 print(data.tail())
 
@@ -73,6 +73,7 @@ print("Number of days:", day_count)
 first_obs = None
  
 # YOUR CODE HERE 5
+first_obs=data.iloc[0,4]
 
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
